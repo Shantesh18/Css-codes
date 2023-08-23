@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        header ul li {
+            list-style-type: none;
+            float: left;
+            margin: 0px 10px;
+            border: 1px solid black;
+            border-radius: 20px;
+            width: 120px;
+            background-image: conic-gradient(rgb(139, 5, 5) 30%, rgb(11, 75, 11) 70%);
+            text-align: center;
+            padding: 15px 10px;
+
+        }
+
+        .sidebarnav li {
+            list-style-type: none;
+            border: 1px solid yellow;
+            border-radius: 11px;
+            width: 150px;
+            /* background-image: conic-gradient(red, rgb(53, 245, 53)); */
+            background-color: black;
+            /* border: yellow; */
+            box-shadow: 10px 5px 5px yellow inset;
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 25px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        header {
+            padding: 10px 15px;
+            display: flex;
+            position: fixed;
+            overflow: hidden;
+            top: 0;
+            width: 100%;
+            background-color: blue;
+        }
+
+        main {
+            display: flex;
+            border-bottom: 1px solid black;
+        }
+
+        header+main{
+            padding-top: 70px;
+        }
+
+        aside {
+            width: 15%;
+            padding: 30px;
+            height: auto;
+            background-color: blue;
+        }
+
+        article {
+            width: 85%;
+            background-color: white;
+        }
+
+        .article-head {
+            display: flex;
+        }
+
+        .main-container {
+            display: flex;
+            column-gap: 20px;
+            margin: 2px;
+        }
+
+        .image-sakal {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-sakal {
+            width: 50%;
+            text-align: center;
+            padding: 30px;
+            font-size: 22px;
+            font-weight: bolder;
+        }
+
+        .trading {
+            padding: 20px;
+        }
+
+        .sakal-content {
+            display: flex;
+            justify-content: center;
+            column-gap: 10px;
+            padding: 20px;
+            font-size: 22px;
+        }
+
+        .shopping-container {
+            display: flex;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        .shopping {
+            display: flex;
+            justify-content: center;
+            width: 50%;
+        }
+
+        .shopping div {
+            margin: 20px;
+        }
+
+        .extra {
+            width: 50%;
+        }
+
+        span {
+            color: rgb(251, 3, 135);
+            font-weight: bolder;
+        }
+
+        hr {
+            height: 3px;
+            color: rgb(48, 44, 44);
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+            column-gap: 20px;
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        .maha-fast {
+            width: 30%;
+            background-color: gray;
+            text-align: center;
+            padding: 20px;
+            padding-left: 30px;
+        }
+
+        .information {
+            display: flex;
+            justify-content: center;
+            width: 40%;
+            background-color: gray;
+            padding: 2px;
+        }
+
+        th {
+            text-align: center;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .contact-us {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           padding: 20px;
+        }
+        .contact-content{
+            display: flex;
+            justify-content: center;
+            column-gap: 30px;
+        }
+        .shantesh{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 30px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="margin-right: 50px;margin-left: 70px; font-size: 42px; color: chartreuse;">SAKAL</h1>
+        <ul>
+            <li><a href="Lokamat.html">LOKAMAT</a></li>
+            <li><a href="samana.html">SAMANA</a></li>
+            <li><a href="sakal.html">SAKAL</a></li>
+            <li><a href="lokasatta.html">LOKASATTA</a></li>
+            <li><a href="mhtimes.html">MH TIMES</a></li>
+            <li><a href="zunjarneta.html">ZUNJAR NETA</a></li>
+        </ul>
+    </header>
+    <main>
+        <aside>
+            <ul class="sidebarnav">
+                <li><a href="Lokamat.html">LOKAMAT</a></li>
+            <li><a href="samana.html">SAMANA</a></li>
+            <li><a href="sakal.html">SAKAL</a></li>
+            <li><a href="lokasatta.html">LOKASATTA</a></li>
+            <li><a href="mhtimes.html">MH TIMES</a></li>
+            <li><a href="zunjarneta.html">ZUNJAR NETA</a></li>
+            </ul>
+        </aside>
+        <article>
+            <div class="article-head">
+                <div style="background-color: red; color: yellow; padding: 15px; margin: 1px;">
+                    <h1>NEWS:</h1>
+                </div>
+                <div
+                    style="background-color: black; color: yellow; padding: 15px; font-size: 22px; font-weight: bolder; margin: 1px;">
+                    <marquee>
+                        <span style="background-color: yellow; color: black;">@=> </span> Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Quisquam totam at alias rem pariatur aliquam possimus voluptatum
+                        sequi distinctio molestias, veniam incidunt quo culpa rerum quos voluptatem dolorem optio
+                        perspiciatis!
+                    </marquee>
+                </div>
+            </div>
+            <div class="main-container">
+                <div class="image-sakal">
+                    <img src="breaking-news.webp" alt="img" />
+                </div>
+                <div class="about-sakal">
+                    <h1 style="font-size: 48px; margin-bottom: 40px;">ABOUT SAKAL</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni beatae numquam ea, expedita magnam
+                        quos architecto sint blanditiis soluta in? Repellat sit odit dolor eos fugiat porro facere unde
+                        blanditiis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit alias porro quaerat quasi, tempora
+                        reprehenderit eius sequi numquam nam minima aliquid ab doloremque! Hic fugit quos numquam
+                        dolores non dolore.</p>
+                </div>
+            </div>
+
+        </article>
+    </main>
+    <div class="trading">
+        <h1 style="text-align: center;">Trading</h1>
+        <div class="sakal-content">
+            <div>
+                <iframe width="300" height="auto" src="https://www.youtube.com/embed/jssFkNSzWEI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <br /><br />
+                <p><span style="color: red;">Pune: </span>lorem lorem lorem</p>
+            </div>
+            <div>
+                <iframe width="300" height="auto" src="https://www.youtube.com/embed/Zb3V-ZtUwqs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <br /><br />
+                <p><span style="color: red;">Pune: </span>lorem lorem lorem</p>
+            </div>
+            <div>
+                <iframe width="300" height="auto" src="https://www.youtube.com/embed/dyU4FwMw2n4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <br /><br />
+                <p><span style="color: red;">Pune: </span>lorem lorem lorem</p>
+            </div>
+            <div>
+                <iframe width="300" height="auto" src="https://www.youtube.com/embed/jssFkNSzWEI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <br /><br />
+                <p><span style="color: red;">Pune: </span>lorem lorem lorem</p>
+            </div>
+        </div>
+        <div class="shopping-container">
+            <div class="shopping">
+                <div>
+                    <img src="weekend-sale.avif" alt="img" width="250px" height="auto" />
+                    <p><span>Shopping: </span>Weekend discount on Flipkart</p>
+                </div>
+                <div>
+                    <img src="weekend-sale.avif" alt="img" width="250px" height="auto" />
+                    <p><span>Shopping: </span>Weekend discount on Flipkart</p>
+                </div>
+            </div>
+            <div class="extra">
+                <div>
+                    <p>
+                        <span>State: </span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure sequi quo
+                        quos
+                        culpa tempore,
+                        praesentium, fuga nam incidunt sed laboriosam numquam quae facilis voluptates harum ex magnam
+                        officiis, saepe voluptate?
+                    </p>
+                    <hr />
+                </div>
+                <div>
+                    <p>
+                        <span>Cricket: </span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure sequi quo
+                        quos culpa
+                        tempore, praesentium, fuga nam incidunt sed laboriosam numquam quae facilis voluptates harum ex
+                        magnam officiis, saepe voluptate?
+                    </p>
+                    <hr />
+                </div>
+                <div>
+                    <p>
+                        <span>Technology: </span></Technology:>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Iure sequi quo quos culpa
+                        tempore, praesentium, fuga nam incidunt sed laboriosam numquam quae facilis voluptates harum ex
+                        magnam officiis, saepe voluptate?
+                    </p>
+                    <hr />
+                </div>
+                <div>
+                    <p>
+                        <span>Economy: </span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure sequi quo
+                        quos culpa
+                        tempore, praesentium, fuga nam incidunt sed laboriosam numquam quae facilis voluptates harum ex
+                        magnam officiis, saepe voluptate?
+                    </p>
+                    <hr />
+                </div>
+            </div>
+        </div>
+        <div class="table-container">
+            <div class="maha-fast">
+                <h1 style="margin-bottom: 20px;">Maha Fast</h1>
+                <marquee direction="up">
+                    <ul>
+                        <li><span>Cricket: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Eveniet quidem aspernatur,
+                            quam facere ab fuga accusamus Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+                            expedita, mollitia eum, blanditiis tempora aliquid inventore suscipit consequuntur magni
+                            itaque vel asperiores impedit unde quidem libero aut provident, ea quod?
+                            <br />
+                        </li>
+                        <li><span>Technology: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                            quidem aspernatur,
+                            quam facere ab fuga accusamus dolorum iusto nihil nulla quas asperiores ipsam nemo quaerat
+                            consectetur unde dicta enim est!<br /></li>
+                        <li><span>Health: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quidem
+                            aspernatur,
+                            quam facere ab fuga accusamus dolorum iusto nihil nulla quas asperiores ipsam nemo quaerat
+                            consectetur unde dicta enim est!<br /></li>
+                        <li><span>National: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                            quidem aspernatur,
+                            quam facere ab fuga accusamus dolorum iusto nihil nulla quas asperiores ipsam nemo quaerat
+                            consectetur unde dicta enim est!<br /></li>
+                    </ul>
+                </marquee>
+            </div>
+            <div class="information">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Information</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:40 PM</td>
+                            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque facere tempore quibusdam
+                                magnam in ducimus laborum adipisci dolorum voluptates eligendi! Soluta iusto, dolorum
+                                beatae reiciendis suscipit quod corrupti quia possimus?</td>
+                        </tr>
+                        <tr>
+                            <td>08:40 PM</td>
+                            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque facere tempore quibusdam
+                                magnam in ducimus laborum adipisci dolorum voluptates eligendi! Soluta iusto, dolorum
+                                beatae reiciendis suscipit quod corrupti quia possimus?</td>
+                        </tr>
+                        <tr>
+                            <td>08:40 PM</td>
+                            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque facere tempore quibusdam
+                                magnam in ducimus laborum adipisci dolorum voluptates eligendi! Soluta iusto, dolorum
+                                beatae reiciendis suscipit quod corrupti quia possimus?</td>
+                        </tr>
+                        <tr>
+                            <td>08:40 PM</td>
+                            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque facere tempore quibusdam
+                                magnam in ducimus laborum adipisci dolorum voluptates eligendi! Soluta iusto, dolorum
+                                beatae reiciendis suscipit quod corrupti quia possimus?</td>
+                        </tr>
+                        <tr>
+                            <td>08:40 PM</td>
+                            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque facere tempore quibusdam
+                                magnam in ducimus laborum adipisci dolorum voluptates eligendi! Soluta iusto, dolorum
+                                beatae reiciendis suscipit quod corrupti quia possimus?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="maha-fast">
+                <h1 style="margin-bottom: 20px;">Maha Fast</h1>
+                <marquee direction="up">
+                    <ul>
+                        <li><span>Cricket: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Eveniet quidem aspernatur,
+                            quam facere ab fuga accusamus Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+                            expedita, mollitia eum, blanditiis tempora aliquid inventore suscipit consequuntur magni
+                            itaque vel asperiores impedit unde quidem libero aut provident, ea quod?
+                            <br />
+                        </li>
+                        <li><span>Technology: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                            quidem aspernatur,
+                            quam facere ab fuga accusamus dolorum iusto nihil nulla quas asperiores ipsam nemo quaerat
+                            consectetur unde dicta enim est!<br /></li>
+                        <li><span>Health: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quidem
+                            aspernatur,
+                            quam facere ab fuga accusamus dolorum iusto nihil nulla quas asperiores ipsam nemo quaerat
+                            consectetur unde dicta enim est!<br /></li>
+                        <li><span>National: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                            quidem aspernatur,
+                            quam facere ab fuga accusamus dolorum iusto nihil nulla quas asperiores ipsam nemo quaerat
+                            consectetur unde dicta enim est!<br /></li>
+                    </ul>
+                </marquee>
+            </div>
+
+        </div>
+    </div>
+    <div class="contact-us">
+        <h1 style="font-size: 48px; margin-bottom: 40px;">CONTACT US</h1>
+        <div class="contact-content">
+            <div style="width: 50%;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7567.181730860834!2d73.85862513748904!3d18.502182554672128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c014271918c5%3A0xfa3ce63f0c494d3f!2sSwargate%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1692362206658!5m2!1sen!2sin" width="420" height="300" style="border: 2px solid black; border-radius: 11px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div style="font-size:x-large; width: 50%;">
+                <p><span>Email: </span>rkg274999@gmail.com</p>
+                <hr/><br/>
+                <p><span>Mobile: </span>7770036118</p>
+                <hr/><br/>
+                <p><span>Address: </span>At Post Tolnur tal-Akkalkot Dirst-Solapur Pin-413227</p>
+                <hr/>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div style="background-color: black; width: 100%; height: 200px; color: white; display: flex; flex-direction: column; justify-content: center;align-items: center;">
+            <h1>Copyright&copy</h1>
+            <p>Shantesh Kumbhar</p>
+            <div class="shantesh">
+                <div>
+                    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img
+                            src="/amozon/images/email-email-miscellaneous-angle-text-thumbnail.png" alt="image"
+                            width="30px"></a>
+                </div>
+                <div>
+                    <a href="https://twitter.com/ravikum78214357" target="_blank"><img src="/amozon/images/twitter_318-566762.avif"
+                            alt="image" width="30px"></a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/shantesh.kumbhar.5/" target="_blank"><img
+                            src="/amozon/images/Facebook-logo-blue-circle-large-transparent-png.png" alt="image"
+                            width="30px">
+                </div></a>
+                <div>
+                    <a href="https://www.linkedin.com/in/shantesh-kumbhar-5492a1189/" target="_blank"><img
+                            src="/amozon/images/600px-LinkedIn_logo_initials.png" alt="image" width="26px">
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.instagram.com/ravi__kumbhar/" target="_blank"><img
+                            src="/amozon/images/instagram-icon-png-image_6315974.png" alt="image" width="30px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

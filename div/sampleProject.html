@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        h1{
+            text-align: center;
+        }
+        header{
+            background-color: blue;
+            padding: 15px;
+        }
+        footer{
+            background-color: black;
+            padding: 15px;
+        }
+        main{
+            display: flex;
+        }
+        .main-container{
+            display: flex;
+            column-gap: 10px;
+        }
+        .images{
+            padding: 10px;
+            width: 70%;
+            display: flex;
+            column-gap: 10px;
+        }
+        .form{
+            width: 30%;
+            background-color: darkgrey;
+        }
+        li{
+            list-style-type: none;
+            border: 1px solid black;
+            border-radius: 50px;
+            text-align: center;
+            width: 150px;
+            padding: 10px;
+            margin: 10px;
+            background-image: radial-gradient(red,green);
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+        }
+        li:hover{
+            background-image: radial-gradient(rgb(201, 139, 6),blue);
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .get{
+            margin: 10px;
+        }
+        input{
+            font-size: large;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <main>
+        <aside style="background-color: darkgoldenrod; width: 15%; padding: 10px;">
+            <h1>Aside</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </aside>
+        <article style="background-color: coral; width: 85%; display: flex; justify-content: center; flex-direction: column; padding: 10px;">
+            <h1>Article</h1>
+            <marquee>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tenetur, dolor explicabo ad, earum at eius sed quisquam assumenda reprehenderit cum vel et dicta. Quisquam obcaecati corporis saepe sint sapiente.</marquee>
+            <div class="main-container">
+            <div style="background-color: blueviolet;">
+            <div class="images">
+                <div>
+                    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSyuHCGDUN6vGolF8KZPl-7PQN81qzk-bdCgukv8X8d-D45ii94Uxz3JfprlT9kW7bBO3qA2wt1wHyw-Eg" width="200px" height="200px" alt="img"/>
+                </div>
+                <div>
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202211/rohitsharmaap-one_one.jpg?VersionId=uueL2tyfn.L2rFzgx0B7IC8qK7d5gfBh" width="200px" height="200px" alt="img"/>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTSJEhlqtdQ4OfV9cPxlBZpuIEuic_I7nSrmYmaBzpn88VNDUKIJ8JlxDSMIT8o7_MSpxevvvz_fRfXHgw" width="200px" height="200px" alt="img"/>
+                </div>
+            </div>
+            <div class="images">
+                <div>
+                    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSyuHCGDUN6vGolF8KZPl-7PQN81qzk-bdCgukv8X8d-D45ii94Uxz3JfprlT9kW7bBO3qA2wt1wHyw-Eg" width="200px" height="200px" alt="img"/>
+                </div>
+                <div>
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202211/rohitsharmaap-one_one.jpg?VersionId=uueL2tyfn.L2rFzgx0B7IC8qK7d5gfBh" width="200px" height="200px" alt="img"/>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTSJEhlqtdQ4OfV9cPxlBZpuIEuic_I7nSrmYmaBzpn88VNDUKIJ8JlxDSMIT8o7_MSpxevvvz_fRfXHgw" width="200px" height="200px" alt="img"/>
+                </div>
+            </div>
+        </div>
+            <div class="form"><h1>Forms</h1>
+                <form>
+                    <div style="text-align: center;">
+                    <div class="get"><input type="text" placeholder="Username"/></div>
+                    <div class="get"><input type="password" placeholder="Password"/></div>
+                    <div class="get"><input type="submit" value="Login"/></div>
+                    </div>
+                    
+                </form>
+            </div>
+            
+            </div>
+        </article>
+    </main>
+    <footer style="background-color: black; color: aliceblue;">
+        <h1>Footer</h1>
+    </footer>
+</body>
+</html>

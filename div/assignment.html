@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: blue;
+        }
+
+        header ul li {
+            list-style-type: none;
+            float: left;
+            margin: 0px 10px;
+            border: 1px solid black;
+            border-radius: 20px;
+            width: 120px;
+            background-image: conic-gradient(rgb(139, 5, 5) 30%, rgb(11, 75, 11) 70%);
+            text-align: center;
+            padding: 15px 10px;
+
+        }
+
+        .sidebarnav li {
+            list-style-type: none;
+            border: 1px solid yellow;
+            border-radius: 11px;
+            width: 150px;
+            /* background-image: conic-gradient(red, rgb(53, 245, 53)); */
+            background-color: black;
+            /* border: yellow; */
+            box-shadow: 10px 5px 5px yellow inset;
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 25px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        header {
+            padding: 10px 15px;
+            display: flex;
+        }
+
+        main {
+            display: flex;
+        }
+
+        aside {
+            width: 15%;
+            padding: 30px;
+        }
+
+        article {
+            width: 85%;
+            background-color: white;
+        }
+
+        .article-head {
+            display: flex;
+        }
+
+        .main-container {
+            display: flex;
+            border: 2px solid black;
+            margin: 2px;
+        }
+
+        .images {
+            background-color: white;
+            width: 75%;
+        }
+
+        .form1 {
+            background-color: gray;
+            width: 25%;
+            padding: 25px;
+            border: 1px solid black;
+        }
+
+        input {
+            text-align: center;
+            font-size: 14px;
+            border: 1px solid black;
+            padding: 5px 0px;
+            width: 30ch;
+        }
+
+        form div {
+            font-size: 18px;
+            margin: 22px 0px;
+            font-weight: 700;
+        }
+
+        button {
+            background-color: black;
+            font-size: 16px;
+            padding: 10px;
+            color: white;
+            border-radius: 11px;
+        }
+
+        .image-row {
+            display: flex;
+        }
+
+        .image-row div {
+            border: 1px solid black;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-row div a {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="margin-right: 50px; font-size: 42px;">A2Z NEWS</h1>
+        <ul>
+            <li><a href="Lokamat.html">LOKAMAT</a></li>
+            <li><a href="samana.html">SAMANA</a></li>
+            <li><a href="sakal.html">SAKAL</a></li>
+            <li><a href="lokasatta.html">LOKASATTA</a></li>
+            <li><a href="mhtimes.html">MH TIMES</a></li>
+            <li><a href="zunjarneta.html">ZUNJAR NETA</a></li>
+        </ul>
+    </header>
+    <main>
+        <aside>
+            <ul class="sidebarnav">
+                <li><a href="Lokamat.html">LOKAMAT</a></li>
+                <li><a href="samana.html">SAMANA</a></li>
+                <li><a href="sakal.html">SAKAL</a></li>
+                <li><a href="lokasatta.html">LOKASATTA</a></li>
+                <li><a href="mhtimes.html">MH TIMES</a></li>
+                <li><a href="zunjarneta.html">ZUNJAR NETA</a></li>
+            </ul>
+        </aside>
+        <article>
+            <div class="article-head">
+                <div style="background-color: red; color: yellow; padding: 15px; margin: 1px;">
+                    <h1>NEWS:</h1>
+                </div>
+                <div
+                    style="background-color: black; color: yellow; padding: 15px; font-size: 22px; font-weight: bolder; margin: 1px;">
+                    <marquee>
+                        <span style="background-color: yellow; color: black;">@=> </span> Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Quisquam totam at alias rem pariatur aliquam possimus voluptatum
+                        sequi distinctio molestias, veniam incidunt quo culpa rerum quos voluptatem dolorem optio
+                        perspiciatis!
+                    </marquee>
+                </div>
+            </div>
+            <div class="main-container">
+                <div class="images">
+                    <div class="image-row">
+                        <div style="width: 34%;">
+                            <img src="sakal.jpg" width="200px" alt="img" />
+                            <a href="sakal.html">VISIT NOW</a>
+                        </div>
+                        <div style="width: 33%;">
+                            <img src="lokmat.jpg" width="180px" alt="img" />
+                            <a href="Lokamat.html">VISIT NOW</a>
+                        </div>
+                        <div style="width: 33%;">
+                            <img src="lokasatta.gif" width="160px" alt="img" />
+                            <a href="lokasatta.html">VISIT NOW</a>
+                        </div>
+                    </div>
+                    <div class="image-row">
+                        <div style="width: 34%;">
+                            <img src="saamana.png" width="200px" alt="img" />
+                            <a href="samana.html">VISIT NOW</a>
+                        </div>
+                        <div style="width: 33%;">
+                            <img src="Maharashtra_Times.webp" width="200px" alt="img" />
+                            <a href="">VISIT NOW</a>
+                        </div>
+                        <div style="width: 33%;">
+                            <img src="zunjar_neta.png" width="160px" alt="img" />
+                            <a href="zunjarneta.html">VISIT NOW</a>
+                        </div>
+                    </div>
+                    <div class="image-row">
+                        <div style="width: 34%;">
+                            <img src="saamana.png" width="200px" alt="img" />
+                            <a href="samana.html">VISIT NOW</a>
+                        </div>
+                        <div style="width: 33%;">
+                            <img src="Maharashtra_Times.webp" width="200px" alt="img" />
+                            <a href="mhtimes.html">VISIT NOW</a>
+                        </div>
+                        <div style="width: 33%;">
+                            <img src="zunjar_neta.png" width="160px" alt="img" />
+                            <a href="zunjarneta.html">VISIT NOW</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form1">
+                    <h1 style="color: orange; text-align: center; font-size: 32px; margin-top: 20px;">JOIN NOW</h1>
+                    <form action="">
+                        <div>
+                            <label>Name:</label><br />
+                            <input type="text" placeholder="Enter Your Name" />
+                        </div>
+                        <div>
+                            <label>Mail:</label><br />
+                            <input type="text" placeholder="Enter Your Mail" />
+                        </div>
+                        <div>
+                            <label>Mobile:</label><br />
+                            <input type="text" placeholder="Enter 10 Digit Mobile No." />
+                        </div>
+                        <div style="text-align: center;">
+                            <button type="submit">JOIN NOW</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </article>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

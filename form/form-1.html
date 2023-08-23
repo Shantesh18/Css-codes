@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .form-container{
+            display: flex;
+            justify-content: center;
+        }
+
+        table,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        <h1>Registration Form</h1>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="student-name">Student Name</label> 
+                    </td>
+                    <td>
+                        <input type="text" id="student-name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="student-date">Date of Birth</label> 
+                    </td>
+                    <td>
+                        <input type="date" id="student-date"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="student-email">Email</label> 
+                    </td>
+                    <td>
+                        <input type="email" id="student-email"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="student-gender">Gender</label> 
+                    </td>
+                    <td>
+                        <input type="radio" id="student-gender" name="gender"/>Male
+                        <input type="radio" id="student-gender" name="gender"/>Female
+                        <input type="radio" id="student-gender" name="gender"/>Not prefer
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="student-skills">Skills</label> 
+                    </td>
+                    <td>
+                        <input type="checkbox" id="student-skills" name="java"/>Java
+                        <input type="checkbox" id="student-.net" name=".Net"/>.Net
+                        <input type="checkbox" id="student-react" namereact="react"/>React
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="student-mobile">Mobile No.</label> 
+                    </td>
+                    <td>
+                        <input type="number" id="student-mobile" minlength="10" maxlength="10"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="student-address">Address</label> 
+                    </td>
+                    <td>
+                        <textarea id="student-address" row="4"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="student-state">State</label> 
+                    </td>
+                    <td>
+                        <select id="student-state">
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Andra Pradesh">Andra Pradesh</option>
+                            <option value="Kerala">Kearala</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="student-city">City</label> 
+                    </td>
+                    <td>
+                        <select id="student-city">
+                            <option value="Pune">Pune</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="solapur">Solapur</option>
+                            <option value="kolhapur">Kolhapur</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="SUBMIT"/>
+                    </td>
+                    <td>
+                        <input type="reset" value="RESET"/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    </div>
+</body>
+</html>
