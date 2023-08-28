@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header-class {
@@ -12,6 +13,10 @@
     font-weight: 800;
     position: fixed;
     top: 0px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 40px 0.9px black;
+    z-index: 100;
 
 }
 
@@ -31,8 +36,8 @@
     margin-right: 30px;
 }
 
-.navigation-links ul li a:hover{
-    color: rgb(87, 169, 251) ;
+.navigation-links ul li a:hover {
+    color: rgb(87, 169, 251);
 }
 
 .btn {
@@ -52,21 +57,21 @@
 
 .main-class {
 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(https://preview.colorlib.com/theme/dento/img/bg-img/1.jpg);
     position: absolute;
-    top: 180px;
+    top: 80px;
     left: 0px;
     width: 100%;
-    height: 615.2px;
+    height: 100%;
     overflow: hidden;
-    margin-top: 1.9px;
-    transform: translate3d(0px, -97.9px, 0px);
-
+    /* pointer-events: none; */
+    z-index: -100;
+    background-image: url('./1.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
 .main-class::after {
+
     position: absolute;
     content: "";
     height: 100%;
@@ -75,28 +80,27 @@
     left: 0;
     z-index: -1;
     background: #2c455d;
-    /* background: -webkit-linear-gradient(to right, #2c455d, #00012c); */
+    background: -webkit-linear-gradient(to right, #2c455d, #00012c);
     background: linear-gradient(to right, #2c455d, #00012c);
-    opacity: 0.75;
-    overflow: hidden;
+    opacity: 0.85;
+}
+
+.header-class+.main-class {
+    padding-top: 80px;
 }
 
 .main-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    position: relative;
     margin-top: 150px;
-    row-gap: 50px;
     color: white;
 
-    align-items: center;
 }
 
 
 .main-container div {
     width: 60%;
     text-align: center;
-    margin: 0px 300px;
+    margin: 50px 300px;
 }
 
 h1 {
@@ -135,7 +139,244 @@ h1 {
 
     box-shadow: none;
     background-color: transparent;
-    background-color:rgb(87, 169, 251);
-    color:white;
+    background-color: rgb(87, 169, 251);
+    color: white;
 
 }
+
+.about-us-container {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: 700px;
+    z-index: -1;
+    background-color: white;
+
+
+}
+
+.about-us-content {
+    margin: 50px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 20px;
+    background-color: white;
+}
+
+.about-us-content>div {
+    text-align: center;
+    width: 50%;
+}
+
+.progress-bar {
+    background-color: rgb(0, 119, 255);
+    width: 565px;
+    height: 10px;
+    border-radius: 0;
+    margin-bottom: 35px;
+
+}
+
+progress::-webkit-progress-value {
+    background-color: rgb(0, 149, 255);
+}
+
+progress::-webkit-progress-bar {
+    background-color: rgb(243, 242, 242);
+}
+
+.about-list {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.symbols {
+    margin: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    background-color: white;
+}
+
+.symbols>div {
+    text-align: center;
+}
+
+.symbols>div>i {
+    margin-bottom: 20px;
+}
+
+.counting {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.feedback {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.our-servicess {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    /* pointer-events: none; */
+    z-index: -100;
+    background-image: url('./13.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.our-servicess::after {
+    position: absolute;
+    content: "";
+    height: 500px;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+    background: #2c455d;
+    background: -webkit-linear-gradient(to right, #2c455d, #00012c);
+    background: linear-gradient(to right, #2c455d, #00012c);
+    opacity: 0.85;
+}
+
+.service-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.service-content>div {
+    margin: 50px;
+}
+
+.service-name {
+    display: flex;
+    column-gap: 40px;
+    margin-bottom: 50px
+}
+
+.service-name>div {
+    width: 150px;
+}
+
+.play {
+    color: #005eff;
+    font-size: 50px;
+    position: relative;
+    bottom: 235px;
+    left: 280px;
+}
+
+.play:hover{
+    color: #10bb07;
+}
+.pricing{
+    width: 100%;
+    margin: 50px auto;
+    /* text-align: center; */
+}
+.pricing-table{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.pricing h1{
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.pricing-table table th{
+    background-color: #00bfff;
+    color: white;
+    text-align: left;
+    padding: 15px 30px;
+
+}
+.pricing-table table td{
+    background-color:rgb(245, 245, 245);
+    color: rgb(79, 78, 78);
+    padding: 15px 30px;
+}
+
+.read-more-btn-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.read-more-btn-content a{
+    text-decoration: none;
+    padding: 20px;
+    color: rgb(0,83,156);
+    border: 4px solid rgb(0,83,156);
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    overflow: hidden;
+    background-color:darkorange;
+    position: relative;
+    z-index: -1;
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 83px;
+    left: 0;
+    background-color: rgb(0,83,156);
+    transition: all 1s;
+    z-index: -2;
+     
+   
+}
+
+.wave::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-image: url('./wave3.png');
+    background-size: 100% 100%;
+    top: 50px;
+    animation: wavy 0.5s linear infinite;
+}
+
+@keyframes wavy{
+    0%{
+        background-position-x: 0;
+    }
+
+    100%{
+        background-position-x: 250px;
+    }
+}
+
+.read-more-btn-content a:hover .wave{
+     bottom:10px;
+     
+}
+.read-more-btn-content a:hover {
+    color: white;
+}
+
